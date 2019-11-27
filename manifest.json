@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
-	"name": "Channel Points Bonus Bot",
-	"version": "0.0.1",
+	"name": "Channel Points Auto Clicker",
+	"version": "0.0.2",
 	"description": "Auto click the bonus channel points button when it appears.",
 	"content_scripts": [
 		{
