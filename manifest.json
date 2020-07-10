@@ -1,13 +1,12 @@
 {
 	"manifest_version": 2,
 	"name": "Twitch Channel Points Auto Clicker",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Auto click the bonus channel points button when it appears.",
 	"content_scripts": [
 		{
 			"matches": ["*://*.twitch.tv/*"],
-			"js": ["content.js"],
-			"css": ["style.css"]
+			"js": ["content.js", "subscribers.js"]
 		}
 	],
 	"icons": {
