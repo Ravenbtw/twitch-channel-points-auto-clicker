@@ -1,21 +1,23 @@
 {
 	"manifest_version": 2,
 	"name": "Twitch Channel Points Auto Clicker",
-	"version": "0.0.9",
-	"description": "Auto click the bonus channel points button when it appears.",
+	"short_name": "TCPAC",
+	"version": "0.0.10",
+	"description": "Enjoy streams in peace!",
 	"content_scripts": [
 		{
 			"matches": ["*://*.twitch.tv/*"],
-			"js": ["content.js", "subscribers.js"]
+			"js": ["content.js"],
+			"css": ["deveasteregg.css"]
 		}
 	],
+	"background": {
+		"scripts": ["background.js"]
+	},
 	"icons": {
 		"16": "icon16.png",
 		"32": "icon32.png",
 		"48": "icon48.png",
 		"128": "icon128.png"
-	},
-	"permissions": [
-		"https://ravenbtw.com/*"
-	]
+	}
 }
