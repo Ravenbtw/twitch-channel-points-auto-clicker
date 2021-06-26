@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Twitch Channel Points Auto Clicker",
 	"short_name": "TCPAC",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"description": "Enjoy streams in peace!",
 	"content_scripts": [
 		{
@@ -14,6 +14,7 @@
 	"background": {
 		"scripts": ["background.js"]
 	},
+	"browser_action": {},
 	"icons": {
 		"16": "icon16.png",
 		"32": "icon32.png",
