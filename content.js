@@ -1,6 +1,11 @@
 setInterval(() => {
-  if (document.querySelector('.claimable-bonus__icon')) {
-    console.log('Found bonus button and pressed it.');
-    document.querySelector('.claimable-bonus__icon').click();
-  }
-}, 1000*0.5)
+  if (!document.querySelector('.claimable-bonus__icon')) return;
+
+  console.log(
+    `[${new Date()
+      .toISOString()
+      .replace('T', ' ')
+      .replace('Z', '')}] Found Channel Points bonus chest and pressed it.`
+  );
+  document.querySelector('.claimable-bonus__icon').click();
+}, 1000);

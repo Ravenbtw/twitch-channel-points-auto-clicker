@@ -1,6 +1,6 @@
 chrome.browserAction.onClicked.addListener(() => {
-    chrome.tabs.create({
-        url: 'https://raven.fo/tcpac-thanks',
-        active: true
-    });
+  chrome.tabs.create({
+    url: 'https://www.raven.fo',
+    active: true,
+  });
 });
