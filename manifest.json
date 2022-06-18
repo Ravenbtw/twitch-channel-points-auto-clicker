@@ -2,12 +2,13 @@
   "manifest_version": 2,
   "name": "Twitch Channel Points Auto Clicker",
   "short_name": "TCPAC",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Auto clicks the Channel Points bonus chest for you, so you can watch streams in peace.",
   "content_scripts": [
     {
       "matches": ["*://*.twitch.tv/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "css": ["badge.css"]
     }
   ],
   "background": {
